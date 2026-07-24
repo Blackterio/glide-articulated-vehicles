@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "blackterios_glide_vehicles\gtasacoacharticulated\vehiclegrunge256"
+	$nocull 1
+	"$surfaceprop" "Metal"
+}

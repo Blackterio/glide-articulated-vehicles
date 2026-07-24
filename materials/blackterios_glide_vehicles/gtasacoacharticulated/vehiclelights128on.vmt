@@ -1,0 +1,13 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "blackterios_glide_vehicles/gtasacoacharticulated/vehiclelights128"
+	"$allowdiffusemodulation" "false"
+
+	$emissiveBlendEnabled "1"
+	$emissiveBlendStrength "1"
+	$emissiveBlendTexture "vgui/white"
+	$emissiveBlendBaseTexture "blackterios_glide_vehicles/gtasacoacharticulated/vehiclelights128on"
+	$emissiveBlendFlowTexture "vgui/white"
+	$emissiveBlendTint "[ 5 5 3 ]"
+	$emissiveBlendScrollVector "[ 0 0 ]"
+}
