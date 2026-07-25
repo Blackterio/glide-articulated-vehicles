@@ -108,7 +108,7 @@ if CLIENT then
 
     function ENT:OnCreateEngineStream( stream )
         stream.offset = Vector( -210, 0, 25 ) -- Where engine sounds come from
-        stream:LoadPreset( "default_truck" ) -- Sound preset name
+        stream:LoadPreset( "airbus" ) -- Sound preset name
     end
 end
 
@@ -161,21 +161,14 @@ if SERVER then
         -- single vehicle.
         --
         -- The limit of 10 seats (Glide.MAX_SEATS) counts BOTH sections
-        -- together. Extra seats are ignored, with a warning in console.
+        -- together. Extra seats are ignored.
         --
         -- The first seat is always the driver.
         self:CreateSeat( Vector( 163, 28, 13 ), Angle( 0, -90, 0 ), Vector( 210, -90, 50 ), true )
 
-        -- Passenger seats on this section
         self:CreateSeat( Vector( 118, 28, 23 ), Angle( 0, -90, 0 ), Vector( 210, -90, 50 ), true )
         self:CreateSeat( Vector( 108, -28, 23 ), Angle( 0, -90, 0 ), Vector( 210, -90, 50 ), true )
 
-        -- Seats on the REAR section can also be declared from here, if you
-        -- prefer having them all in one file. The offset is relative to the
-        -- REAR model. (The other way is calling `CreateSeat` in the rear
-        -- file's own `CreateFeatures`, like the rear example does.)
-        --
-        -- self:CreateRearSeat( Vector( 50, 28, 23 ), Angle( 0, -90, 0 ), Vector( 80, -90, 50 ), true )
 
         -- ===== WHEELS =====
         -- Only this section's wheels. The rear ones go in the rear file.
