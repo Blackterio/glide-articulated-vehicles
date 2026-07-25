@@ -88,7 +88,7 @@ if CLIENT then
     }
 
     function ENT:OnCreateEngineStream( stream )
-        stream.offset = Vector( -210.766, 0, 25.417 )
+        stream.offset = Vector( -700.766, 0, 25.417 )
         stream:LoadPreset( "airbus" )
     end
 end
